@@ -1,0 +1,31 @@
+{
+  "name": "barbergallegos_backend",
+  "version": "1.0.0",
+  "description": "Backend for Barber Gallegos in MEVN",
+  "homepage": "https://github.com/ivanleonc/barber-gallegos-app#readme",
+  "bugs": {
+    "url": "https://github.com/ivanleonc/barber-gallegos-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanleonc/barber-gallegos-app.git"
+  },
+  "license": "ISC",
+  "author": "Ivan Leon",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed:import": "node data/seed.js --import",
+    "seed:destroy" : "node data/seed.js --destroy"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4"
+  }
+}
